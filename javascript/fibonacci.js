@@ -1,5 +1,11 @@
-function fibonacci(num) {
-  // type your code here
+function fibonacci(input) {
+  
+    let seq = [0, 1, 1, 2];
+    let count = 0
+    for (let i = 3 ; i < input; i++){
+      seq.push(seq[i] + seq[i-1])
+    }return seq[input]
+    
 }
 
 if (require.main === module) {
